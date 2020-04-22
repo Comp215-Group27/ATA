@@ -1,0 +1,253 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  namespace Community.Comment {
+    class Community.Comment.Comment {
+    }
+  }
+  
+
+  namespace Community.Comment {
+    class Community.Comment.Delete {
+    }
+  }
+  
+
+  namespace Community.Comment {
+    class Community.Comment.Edit {
+    }
+  }
+  
+
+  namespace Community.Comment {
+    class Community.Comment.Edit_main {
+    }
+  }
+  
+
+  namespace Community.Comment {
+    class Community.Comment.show {
+    }
+  }
+  
+
+  namespace Community.Common {
+    class Community.Common.CommentAdaptor {
+    }
+  }
+  
+
+  namespace Community.Common {
+    class Community.Common.Community {
+    }
+  }
+  
+
+  namespace Community.Common {
+    class Community.Common.DBOpenHelperComment {
+    }
+  }
+  
+
+  namespace Community.Common {
+    class Community.Common.commentFormat {
+    }
+  }
+  
+
+  namespace Login {
+    class Login.DBOpenHelperUser {
+    }
+  }
+  
+
+  namespace Login {
+    class Login.RegisterActivity {
+    }
+  }
+  
+
+  namespace Login {
+    class Login.User {
+    }
+  }
+  
+
+  namespace Login {
+    class Login.loginActivity {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.AttractionActivity {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.AttractionAdaptor {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.BudgetActivity {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Change {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.ChooseCityActivity {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.DatabaseHelper {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.GeneratePlanActivity {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Item {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Menu2 {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.RatingActivity {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.ShowcaseAdaptor {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Utility {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.knapsack {
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.knapsackMoney {
+    }
+  }
+  
+
+  namespace map {
+    class map.DirectionsJSONParser {
+    }
+  }
+  
+
+  namespace map {
+    class map.MapsActivity {
+    }
+  }
+  
+
+  namespace map {
+    class map.ParserTask {
+    }
+  }
+  
+
+  namespace map {
+    class map.load {
+    }
+  }
+  
+
+  Community.Comment.Comment .up.|> android.view.View.OnClickListener
+  Community.Comment.Comment -up-|> androidx.appcompat.app.AppCompatActivity
+  Community.Comment.Comment o-- Community.Common.commentFormat : mlastPlan
+  Community.Comment.Comment o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Community.Comment.Delete -up-|> androidx.appcompat.app.AppCompatActivity
+  Community.Comment.Delete o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Community.Comment.Edit -up-|> androidx.appcompat.app.AppCompatActivity
+  Community.Comment.Edit o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Community.Comment.Edit_main .up.|> android.view.View.OnClickListener
+  Community.Comment.Edit_main -up-|> androidx.appcompat.app.AppCompatActivity
+  Community.Comment.Edit_main o-- Community.Common.commentFormat : mPlan
+  Community.Comment.Edit_main o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Community.Comment.show .up.|> android.view.View.OnClickListener
+  Community.Comment.show -up-|> androidx.appcompat.app.AppCompatActivity
+  Community.Comment.show o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Community.Common.CommentAdaptor -up-|> android.widget.BaseAdapter
+  Community.Common.Community .up.|> android.view.View.OnClickListener
+  Community.Common.Community -up-|> androidx.appcompat.app.AppCompatActivity
+  Community.Common.Community o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Community.Common.Community o-- Login.DBOpenHelperUser : mDBOpenHelperUser
+  Community.Common.DBOpenHelperComment -up-|> android.database.sqlite.SQLiteOpenHelper
+  Login.DBOpenHelperUser -up-|> android.database.sqlite.SQLiteOpenHelper
+  Login.RegisterActivity .up.|> android.view.View.OnClickListener
+  Login.RegisterActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  Login.RegisterActivity o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Login.RegisterActivity o-- Login.DBOpenHelperUser : mDBOpenHelperUser
+  Login.loginActivity .up.|> android.view.View.OnClickListener
+  Login.loginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  Login.loginActivity o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  Login.loginActivity o-- Login.DBOpenHelperUser : mDBOpenHelperUser
+  com.example.map2.AttractionActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.AttractionAdaptor -up-|> android.widget.BaseAdapter
+  com.example.map2.BudgetActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.Change -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.ChooseCityActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.DatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.example.map2.GeneratePlanActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.Menu2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.Menu2 o-- Login.DBOpenHelperUser : mDBOpenHelperUser
+  com.example.map2.RatingActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.ShowcaseAdaptor -up-|> android.widget.BaseAdapter
+  map.MapsActivity .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  map.MapsActivity -up-|> androidx.fragment.app.FragmentActivity
+  map.ParserTask -up-|> android.os.AsyncTask
+  map.load -up-|> androidx.appcompat.app.AppCompatActivity
+  map.load o-- Community.Common.DBOpenHelperComment : mDBOpenHelperComment
+  map.load o-- Login.DBOpenHelperUser : mDBOpenHelperUser
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

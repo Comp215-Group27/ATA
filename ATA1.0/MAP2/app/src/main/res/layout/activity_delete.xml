@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Liyang Chen and the combination with the code done by Haopeng Song, Group 27, Comp215, University of Liverpool -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Community.Comment.Delete">
+
+    <ListView
+        android:id="@+id/changeLV3"
+        android:layout_width="450dp"
+        android:layout_height="680dp"
+        app:layout_constraintTop_toBottomOf="@+id/cancel3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"></ListView>
+    <Button
+        android:id="@+id/cancel3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:onClick="onClick"
+        android:text="cancel"
+        android:textColor="#fff"
+        tools:ignore="MissingConstraints,OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

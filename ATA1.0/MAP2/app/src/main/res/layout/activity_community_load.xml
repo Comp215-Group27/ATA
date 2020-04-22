@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Liyang Chen and the combination with the code done by Haopeng Song, Group 27, Comp215, University of Liverpool -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context="Community.Common.Community">
+
+    <!--    <RelativeLayout-->
+<!--        android:id="@+id/rl_load_top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="@color/color_minefragment_top">-->
+
+
+
+    <TextView
+            android:id="@+id/Community_userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity" />
+
+    <ImageView
+        android:id="@+id/Community_back_to_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+<!--    </RelativeLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/Allplan"
+        android:layout_marginTop="118dp"
+        android:orientation="vertical"
+        tools:context=".Community" />
+
+    <ListView
+    android:id="@+id/Allplan"
+    android:layout_width="450dp"
+    android:layout_height="400dp"
+    android:layout_marginTop="120dp"
+    tools:layout_editor_absoluteX="1dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/Community_login"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="login"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bt_shareNewPlan"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="800dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="@string/share_last_plan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Community_logout"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="logout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"  />
+
+    <Button
+        android:id="@+id/Community_clearUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginBottom="16dp"
+        android:text="clear comment" />
+
+    <Button
+        android:id="@+id/bt_personalPlan"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="800dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="@string/all_of_my_plans"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent" />
+/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All the trips that people have shared:"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>

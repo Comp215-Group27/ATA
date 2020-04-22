@@ -1,0 +1,255 @@
+@startuml
+
+title __MAP2's Class Diagram__\n
+
+  namespace com.example.map2 {
+    class com.example.map2.AttractionActivity {
+        {static} + cambridge_Attractions : String[]
+        {static} + london_Attractions : String[]
+        {static} + manchester_Attractions : String[]
+        {static} + york_Attractions : String[]
+        ~ attractionList : ListView
+        ~ backButton : ImageView
+        ~ cityName : String
+        ~ goAtaButton : Button
+        - attractionNames : ArrayList<String>
+        - attractionRates : ArrayList<Integer>
+        - names : String[]
+        # onActivityResult()
+        # onCreate()
+        - toArray()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.AttractionAdaptor {
+        ~ attractions : String[]
+        ~ mInflator : LayoutInflater
+        + AttractionAdaptor()
+        + getCount()
+        + getItem()
+        + getItemId()
+        + getView()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.BudgetActivity {
+        {static} + money : Integer
+        {static} + numberPeople : Integer
+        {static} + time : Integer
+        ~ backButton : ImageView
+        ~ cityButton : Button
+        ~ homeButton : ImageView
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Change {
+        {static} + changed : String
+        {static} + destPos : int
+        {static} + startPos : int
+        ~ attratcionList : ArrayList<String>
+        ~ changeList : ListView
+        ~ rates : ArrayList<Integer>
+        ~ totalM : int
+        ~ totalT : int
+        - remove : int
+        # onCreate()
+        - getShowList()
+        - getTotalMoney()
+        - getTotalTime()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.ChooseCityActivity {
+        ~ cambridgeButton : Button
+        ~ homeButton : ImageView
+        ~ ib : ImageView
+        ~ londonButton : Button
+        ~ manchesterButton : Button
+        ~ yorkButton : Button
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.DatabaseHelper {
+        {static} + dataBaseName : String
+        {static} + tableCol1 : String
+        {static} + tableCol2 : String
+        {static} + tableCol3 : String
+        {static} + tableName1 : String
+        {static} + tableName2 : String
+        {static} + tableName3 : String
+        {static} + tableName4 : String
+        + DatabaseHelper()
+        + deleteCambrige()
+        + deleteLondon()
+        + deleteManchester()
+        + deleteYork()
+        + drop()
+        + getAttractionNames()
+        + getticketPrice()
+        + getvisitTime()
+        + insertCambridgeData()
+        + insertLondonData()
+        + insertManchesterData()
+        + insertYorkData()
+        + onCreate()
+        + onUpgrade()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.GeneratePlanActivity {
+        {static} + arrayAdapter : ArrayAdapter
+        {static} + destination : TextView
+        {static} + input : ArrayList<Item>
+        {static} + start : TextView
+        {static} + totalMoneyV : TextView
+        {static} + totalTimeV : TextView
+        ~ TMList : ListView
+        ~ backButton : ImageView
+        {static} ~ city_Name : String
+        ~ generateRouteButton : Button
+        ~ homeButton : ImageView
+        ~ names : ArrayList<String>
+        ~ startOverButton : Button
+        ~ toShowList : ArrayList<String>
+        ~ values : ArrayList<Integer>
+        ~ which : int
+        {static} - knapMoney : knapsackMoney
+        {static} - knapTime : knapsack
+        - resultNameList : ArrayList<String>
+        - toRemove : int
+        - totalMoney : int
+        - totalTime : int
+        {static} + createItems()
+        # onActivityResult()
+        # onCreate()
+        - checkArray()
+        - getMoneyList()
+        - getResultList()
+        - getTimeList()
+        - getTotalMoney()
+        - getTotalTime()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Item {
+        - money : int
+        - name : String
+        - time : int
+        - value : int
+        + Item()
+        + getMoneyWeight()
+        + getName()
+        + getTimeWeight()
+        + getValue()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Menu2 {
+        {static} + myDB : DatabaseHelper
+        {static} + statusOfLogin : int
+        # InsertCambridgeDataInSQlite()
+        # InsertLondonDataInSQlite()
+        # InsertManchesterDataInSQlite()
+        # InsertYorkDataInSQlite()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.RatingActivity {
+        ~ backButton : ImageView
+        ~ bar : RatingBar
+        ~ value : int
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.ShowcaseAdaptor {
+        ~ mInflator : LayoutInflater
+        ~ names : ArrayList<String>
+        + ShowcaseAdaptor()
+        + getCount()
+        + getItem()
+        + getItemId()
+        + getView()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.Utility {
+        {static} + setListViewHeightBasedOnChildren()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.knapsack {
+        + knapWeight : int
+        + list : ArrayList<Item>
+        + optimalvalue : double
+        + table : double[][]
+        + getKnapsack()
+        + knapsack()
+        - fillTable()
+        - returnItems()
+    }
+  }
+  
+
+  namespace com.example.map2 {
+    class com.example.map2.knapsackMoney {
+        + knapWeight : int
+        + list : ArrayList<Item>
+        + optimalvalue : double
+        + table : double[][]
+        + getKnapsack()
+        + knapsackMoney()
+        - fillTable()
+        - returnItems()
+    }
+  }
+  
+
+  com.example.map2.AttractionActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.AttractionAdaptor -up-|> android.widget.BaseAdapter
+  com.example.map2.BudgetActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.Change -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.ChooseCityActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.DatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.example.map2.GeneratePlanActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.Menu2 -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.Menu2 o-- Login.DBOpenHelperUser : mDBOpenHelperUser
+  com.example.map2.RatingActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.map2.ShowcaseAdaptor -up-|> android.widget.BaseAdapter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

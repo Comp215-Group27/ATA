@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Liyang Chen and the combination with the code done by Zhenyan Li and Haopeng Song, Group 27, Comp215, University of Liverpool -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/et_loginactivity_username"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/blue"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_loginactivity_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <EditText
+        android:id="@+id/et_loginactivity_password"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/blue"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_loginactivity_login"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:fontFamily="@font/regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_loginactivity_password"
+        app:layout_constraintVertical_bias="0.047" />
+
+
+
+    <Button
+        android:id="@+id/tv_loginactivity_register"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/button"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:fontFamily="@font/regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toEndOf="@+id/bt_loginactivity_login"
+        app:layout_constraintTop_toBottomOf="@+id/et_loginactivity_password"
+        app:layout_constraintVertical_bias="0.143" />
+
+<!--    <Button-->
+<!--        android:id="@+id/"-->
+<!--        android:layout_width="135dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginBottom="22dp"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:text="As customer"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        app:fontFamily="@font/regular"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.413"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/bt_loginactivity_login"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/et_loginactivity_password"-->
+<!--        app:layout_constraintVertical_bias="0.428" />-->
+    <TextView
+        android:id="@+id/haveNoAccountTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/no_account_yet"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_loginactivity_login" />
+
+
+    <TextView
+        android:id="@+id/as_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/view_as_a_visitor"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        app:fontFamily="@font/regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/haveNoAccountTxt"
+        app:layout_constraintTop_toBottomOf="@+id/bt_loginactivity_login"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/hello_there"
+        android:textColor="@color/light_gray"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/homebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+    <ImageView
+        android:id="@+id/iv_login_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/comp215_group27"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        app:fontFamily="@font/regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

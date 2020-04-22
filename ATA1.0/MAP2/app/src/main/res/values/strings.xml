@@ -1,0 +1,125 @@
+<!--Created by Liyang Chen, Group 27, Comp215, University of Liverpool -->
+<resources>
+    <string name="app_name">ATA</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_get_places">getPlaces</string>
+    <string name="YOUR_API_KEY">AIzaSyCgN3yVS1258_Lf0d6JPRrkptFxQ2tTOXE</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="large_text">
+    </string>
+    <string name="tell_us_your_budget">Tell Us Your Budget</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="welcome_to_ata">Welcome to  \nATA!</string>
+    <string name="comp215_group27">COMP215 Group27</string>
+    <string name="let_s_ata">Let\'s ATA!</string>
+    <string name="a_trip_or_a_post">A Trip or A Post?</string>
+    <string name="build_a_plan">Build A Plan</string>
+    <string name="share_your_plan">Share Your Plan</string>
+    <string name="enter_community">Enter Community</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="need_help">Need help?</string>
+    <string name="you_are_not_a_member">You are not a member?</string>
+    <string name="register">Register</string>
+    <string name="hello_there">Hello There!</string>
+    <string name="please_enter_username">Please enter username</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_password_again">Please enter password again</string>
+    <string name="please_enter_the_digits_below">Please enter the digits below</string>
+    <string name="register_and_login">Register and login</string>
+    <string name="choose_the_city">Choose the city</string>
+    <string name="london">London</string>
+    <string name="manchester">Manchester</string>
+    <string name="liverpool">Liverpool</string>
+    <string name="edinburgh">Edinburgh</string>
+    <string name="route_details">Route Details</string>
+    <string name="no_account_yet">No account yet?</string>
+    <string name="view_as_a_visitor">View as a visitor</string>
+    <string name="let_s_go_ata">Let\'s go ATA</string>
+    <string name="rate_the_attraction">Rate The Attraction</string>
+    <string name="your_rating_for_the_attraction_is">Your rating for the attraction is</string>
+    <string name="your_previous_plans">Check Your Previous Plans</string>
+    <string name="ata_here_is_your_plan">ATA! Here is your \nplan</string>
+    <string name="the_following_are_recommended_attraction_s">Recommended attraction(s)</string>
+    <string name="remove_the_attraction">Remove the attraction</string>
+    <string name="if_you_take_the_plan_your_cost_will_be">If you take the plan your cost will be</string>
+    <string name="check_and_modify_the_endpoints">Check and modify the endpoints</string>
+    <string name="change">Change</string>
+    <string name="start_over">Start over</string>
+    <string name="generate_route">Generate route</string>
+    <string name="map_and_route">Map And Route</string>
+    <string name="enter_the_travelers_amount">Enter the travelers amount</string>
+    <string name="ata_community">ATA Community</string>
+    <string name="share_last_plan">See last plan</string>
+    <string name="all_of_my_plans">All of my plans</string>
+    <string name="comment_on_your_last_plan">See Your Last Plan</string>
+    <string name="post">Post</string>
+    <string name="leave_your_comment_here">Leave your comment here</string>
+    <string name="all_your_plans_in_ata">All Your Plans in \nATA</string>
+    <string name="pick_one_to_edit_or_delete">Pick one from list to continue</string>
+
+
+
+
+
+
+    <string-array name="cities">
+        <item>London</item>
+        <item>Liverpool</item>
+        <item>Manchester</item>
+        <item>Edinburgh</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>10 tourist attractions</item>
+        <item>5 tourist attractions</item>
+        <item>7 tourist attractions</item>
+        <item>6 tourist attractions</item>
+    </string-array>
+    <string-array name="LondonAttractions">
+        <item>London Tower, London</item>
+        <item>Hyde Park, London</item>
+        <item>London Eye, London</item>
+        <item>Big Ben, London</item>
+        <item>Imperial College London, London</item>
+    </string-array>
+
+    <string-array name="LiverpoolAttractions">
+        <item>Liverpool One</item>
+        <item>Albert Dock</item>
+        <item>Beatles museum</item>
+        <item>Uni of Liverpool</item>
+        <item>Cambridge Court, Liverpool</item>
+    </string-array>
+    <string-array name="ManchesterAttractions">
+        <item>Uni of manchester</item>
+        <item>Manhcester Cathedral</item>
+        <item>Manchester Art Gallery</item>
+        <item>Old Trafford Stadium</item>
+    </string-array>
+    <string-array name="EdinburghAttractions">
+        <item>Uni of Edinburgh</item>
+        <item>Victoria Street</item>
+        <item>The Elephant House, Edinburgh</item>
+        <item>Royal Mile, Edinburgh</item>
+    </string-array>
+
+
+    <string name="please_enter_time_nbudget_here">Enter your time budget</string>
+    <string name="enter_your_money_budget">Enter your money budget</string>
+    <string name="generate_a_plan">Generate a plan!</string>
+    <string name="next_choose_a_city">Next</string>
+
+
+
+
+</resources>

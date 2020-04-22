@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Liyang Chen and the combination with the code done by Haopeng Song, Group 27, Comp215, University of Liverpool -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editRows"
+    android:textColor="@color/light_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="20sp">
+
+</TextView>

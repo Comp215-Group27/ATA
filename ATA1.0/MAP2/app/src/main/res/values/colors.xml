@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Liyang Chen, Group 27, Comp215, University of Liverpool -->
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="red">#FF0000</color>
+    <color name="color_minefragment_top">#20B2AA</color>
+    <color name="green">#14D9C1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#2E5595</color>
+    <color name="light_gray">#E8EBEC</color>
+
+</resources>
